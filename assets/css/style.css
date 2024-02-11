@@ -752,7 +752,7 @@ color: purple;
 .publications .box-container {
   
   
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   
@@ -760,8 +760,8 @@ color: purple;
 .publications .box-container .box {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin-left: 0rem;
+  width: auto;
+  
   height: auto;
   border-radius: 0.5rem;
   box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -775,24 +775,24 @@ color: purple;
 .publications .box-container .box .image {
   flex: 1 1 1rem;
   align-items: center;
-  width: 100%;
+  width: auto;
   
 }
 .publications .box-container .box img {
  
   position: relative;
   align-items: center;
-  width: 100%;
+  width: auto;
   height: auto;
 }
 
 
 .publications .box-container .box .content {
-  position: relative;
+
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+
   
   
 }
@@ -835,7 +835,7 @@ color: purple;
 @media screen {
   .publications .box-container .box {
     flex-direction: column;
-    width: 100%;
+    width: auto;
   }
   .publications .box-container .box .image {
     width: 100%;
