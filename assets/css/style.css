@@ -650,7 +650,7 @@ color: purple;
 .education .box-container .box {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 100%;
   border-radius: 0.5rem;
   box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -744,7 +744,7 @@ color: purple;
 }
 .publications .qoute {
   font-size: 1.5rem;
-  text-align: left;
+  
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   margin-top: 0.5rem;
@@ -752,16 +752,16 @@ color: purple;
 .publications .box-container {
   
   
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+ 
   flex-direction: column;
   
 }
 .publications .box-container .box {
   display: flex;
   flex-direction: column;
-  width: auto;
-  
+  width: 100%;
+  margin-left: 0rem;
   height: auto;
   border-radius: 0.5rem;
   box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -775,24 +775,24 @@ color: purple;
 .publications .box-container .box .image {
   flex: 1 1 1rem;
   align-items: center;
-  width: auto;
+  width: 100%;
   
 }
 .publications .box-container .box img {
  
   position: relative;
   align-items: center;
-  width: auto;
+  width: 100%;
   height: auto;
 }
 
 
 .publications .box-container .box .content {
-
+  position: relative;
   align-items: center;
   display: flex;
   flex-direction: column;
-
+  padding: 1rem;
   
   
 }
@@ -816,7 +816,7 @@ color: purple;
   margin-top: 1px;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
-  margin-left: 2rem;
+  margin-left: 3rem;
 
 }
 .publications .box-container h4 span {
@@ -832,10 +832,10 @@ color: purple;
 
 
 /* publications media queries starts*/
-@media screen {
+@media screen and (max-width: 800px) {
   .publications .box-container .box {
     flex-direction: column;
-    width: auto;
+    width: 100%;
   }
   .publications .box-container .box .image {
     width: 100%;
@@ -932,6 +932,7 @@ color: purple;
   margin-top: 1px;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
+  margin-left: 2rem;
 }
 .projects .box-container .box .content h4 span{
   font-size: 2rem;
@@ -945,6 +946,7 @@ color: purple;
   font-size: 1.5rem;
   margin-top: 1rem;
   text-align: left;
+ margin-left: 2rem;
 }
 
 
@@ -1190,9 +1192,19 @@ color: purple;
   padding: 1rem;
   flex-wrap: wrap;
   flex: 1 1 1rem;
+
+}
+.Achievements .box-container .box .content h4 {
+  font-size: 2rem;
+  color: green;
+  padding: 0.5rem 0;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 1rem;
+  
 }
 .Achievements .box-container .box .content h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #012970;
   padding: 0.5rem 0;
   font-weight: 600;
@@ -1203,6 +1215,7 @@ color: purple;
   font-size: 1.5rem;
   margin-left: 0.rem;
   text-align: left;
+   margin-left: 1rem;
 }
 .Achievements h4 {
   font-size: 2rem;
