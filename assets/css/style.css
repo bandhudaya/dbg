@@ -760,7 +760,7 @@ color: purple;
 .publications .box-container .box {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   margin-left: 0rem;
   height: auto;
   border-radius: 0.5rem;
@@ -832,7 +832,7 @@ color: purple;
 
 
 /* publications media queries starts*/
-@media screen and (max-width: 800px) {
+@media screen {
   .publications .box-container .box {
     flex-direction: column;
     width: 100%;
