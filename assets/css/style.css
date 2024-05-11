@@ -365,8 +365,7 @@ header .navbar ul li a:hover {
   flex: 1 1 35rem;
 }
 .about .row .image img {
-margin-top: 1.5rem;  
-margin : 2rem;
+margin: 2rem;
   width: 100%;
   height: auto;
   border-radius: 5%;
@@ -889,22 +888,22 @@ color: purple;
   font-weight: 600;
   margin-top: 0.5rem;
 }
-.containerr {
+/*.containerr {
     width: auto;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent wrapping */
-}
+    overflow-x: auto;  Enable horizontal scrolling */
+ /*   white-space: nowrap;  Prevent wrapping
+} */
 
-.project {
+/*.project {
     display: grid;
-    width: auto; /* Adjust the width of each project as needed */
-    height: auto; /* Adjust the height of each project as needed */
-    margin-right: 20px; /* Adjust spacing between projects as needed */
-    padding: 20x;
+    width: auto; Adjust the width of each project as needed */
+/*    height: auto;  Adjust the height of each project as needed */
+ /*   margin-right: 20px;  Adjust spacing between projects as needed */
+  /*  padding: 20x;
     border-radius: 5px;
     text-align: center;
     
-}
+}*/
 
 .projects .box-container {
   
@@ -917,7 +916,7 @@ color: purple;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height : auto;
+  height: auto;
   border-radius: 0.5rem;
   box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
   text-align: center;
