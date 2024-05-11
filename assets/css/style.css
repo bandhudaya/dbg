@@ -989,7 +989,7 @@ color: purple;
 
 
 /* projects media queries starts*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .projects .box-container .box {
     flex-direction: column;
     width: auto;
