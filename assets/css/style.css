@@ -916,13 +916,14 @@ color: purple;
 .projects .box-container .box {
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100%;
   height : auto;
   border-radius: 0.5rem;
   box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
   text-align: center;
   position: relative;
   margin-top: 0.5rem;
+
   
   background: rgb(252, 252, 252);
 }
@@ -935,8 +936,8 @@ color: purple;
 .projects .box-container .box img {
  
   position: relative;
-  width: auto;
-  height: 40rem;
+  width: 100%;
+  height: 100%;
 }
 .projects .box-container .box .content {
   position: relative;
@@ -981,18 +982,19 @@ color: purple;
 }
 .projects .box-container .box .content p {
   font-size: 1.5rem;
-  margin-top: 1rem;
+  margin: 1rem;
   text-align: left;
- margin-left: 2rem;
+  justify-content: left;
+
 }
 
 
 /* projects media queries starts*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   .projects .box-container .box {
     flex-direction: column;
     width: auto;
-height: auto;
+
   }
   .projects .box-container .box .image {
     width: auto;
@@ -1195,22 +1197,23 @@ height: auto;
   background: #e5ecfb;
   min-height: 10vh;
 }
+
 .Achievements .box-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: left;
   align-items: left;
   flex-direction: column;
 }
 .Achievements .box-container .box {
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100%;
   border-radius: 0.5rem;
   box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
   text-align: left;
   position: relative;
-  margin-top: 2rem;
-  
+  margin: 2rem;
   background: rgb(252, 252, 252);
 
 }
@@ -1242,6 +1245,7 @@ height: auto;
 }
 .Achievements .box-container .box .content p {
   font-size: 1.5rem;
+  margin-left: 0.rem;
   text-align: left;
    margin-left: 1rem;
 }
@@ -1253,22 +1257,31 @@ height: auto;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
 }
-
+.Achievements .box-container .box .image {
+  flex: 1 1 50rem;
+  width: 100%;
+}
+.Achievements .box-container .box img {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+}
 
 /* Achievements media queries starts*/
-@media screen  {
+@media screen and (max-width: 600px) {
   .Achievements .box-container .box {
     flex-direction: column;
-    width: auto;
+    width: 100%;
   }
   .Achievements .box-container .box .image {
-    width: auto;
-    height: 80%;
-
+    width: 100%;
+    height: 100%;
+position: relative;
   }
   .Achievements .box-container .box img {
-    width: 80%;
-    margin-left: 1rem;
+    width: 100%;
   }
   .Achievements .box-container .box .content {
     position: relative;
@@ -1276,7 +1289,6 @@ height: auto;
     flex-direction: column;
     padding: 1rem;
     flex-wrap: wrap;
-   align-items: left;
     flex: 0;
   }
   .Achievements .btns {
