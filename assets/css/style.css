@@ -635,7 +635,7 @@ color: purple;
 }
 .education .qoute {
   font-size: 1.5rem;
-  text-align: center;
+  text-align: left;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   margin-top: 1rem;
@@ -644,7 +644,7 @@ color: purple;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
 }
 .education .box-container .box {
@@ -683,10 +683,10 @@ color: purple;
   flex: 1 1 70rem;
 }
 .education .box-container .box .content h3 {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   color: #012970;
   padding: 0.5rem 0;
-  font-weight: 600;
+  font-weight: 700;
   text-align: left;
   margin-left: 1rem;
 }
@@ -694,14 +694,26 @@ color: purple;
   font-size: 1.5rem;
   margin-left: 1rem;
   text-align: left;
+  color: black;
+  font-weight: 500;
+  font-family: "Nunito", sans-serif;
+}
+
+.education .box-container .box .content p span {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  text-align: left;
+  color: blue;
+  font-weight: 500;
+  font-family: "Nunito", sans-serif;
 }
 .education h4 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: rgb(34, 109, 0);
   text-align: left;
-  margin: 1rem;
+  margin: 0.5rem;
   font-family: "Nunito", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 /* education media queries starts*/
@@ -738,7 +750,7 @@ color: purple;
 
 /*publications section starts*/ 
 .publications {
-  background: #e5ecfb;
+  background: rgb(252, 252, 252);
   min-height: 5vh;
   
 }
@@ -753,21 +765,20 @@ color: purple;
   
   
   justify-content: left;
- 
   flex-direction: column;
   
 }
 .publications .box-container .box {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   margin-left: 0rem;
   height: auto;
   border-radius: 0.5rem;
-  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
   
   position: relative;
-  margin-top: 2rem;
+  margin-top: 4rem;
   
   background: rgb(252, 252, 252);
 }
@@ -775,14 +786,14 @@ color: purple;
 .publications .box-container .box .image {
   flex: 1 1 1rem;
   align-items: center;
-  width: 100%;
+  width: auto;
   
 }
 .publications .box-container .box img {
  
   position: relative;
   align-items: center;
-  width: 100%;
+  width: auto;
   height: auto;
 }
 
@@ -807,7 +818,7 @@ color: purple;
 .publications .box-container p {
   font-size: 1.5rem;
   text-align: left;
-  margin-left: 2rem;
+  margin-left: 0.5rem;
 }
 .publications .box-container h4 {
   font-size: 1.5rem;
@@ -816,7 +827,7 @@ color: purple;
   margin-top: 1px;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
-  margin-left: 3rem;
+  margin-left: 0.5rem;
 
 }
 .publications .box-container h4 span {
@@ -832,10 +843,10 @@ color: purple;
 
 
 /* publications media queries starts*/
-@media screen and (max-width: 800px) {
+@media screen  {
   .publications .box-container .box {
     flex-direction: column;
-    width: 100%;
+    width: auto;
   }
   .publications .box-container .box .image {
     width: 100%;
@@ -855,7 +866,7 @@ color: purple;
     flex: 0;
   }
   .publications .btns {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     margin-left: 0rem;
     margin-right: 1rem;
     flex-wrap: wrap;
@@ -878,6 +889,23 @@ color: purple;
   font-weight: 600;
   margin-top: 0.5rem;
 }
+.containerr {
+    width: auto;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.project {
+    display: grid;
+    width: auto; /* Adjust the width of each project as needed */
+    height: auto; /* Adjust the height of each project as needed */
+    margin-right: 20px; /* Adjust spacing between projects as needed */
+    padding: 20x;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
 .projects .box-container {
   
   
@@ -888,26 +916,27 @@ color: purple;
 .projects .box-container .box {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: auto;
+  height : auto;
   border-radius: 0.5rem;
-  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
   text-align: center;
   position: relative;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   
   background: rgb(252, 252, 252);
 }
 
 .projects .box-container .box .image {
   flex: 1 1 1rem;
-  width: 100%;
+  width: auto;
   
 }
 .projects .box-container .box img {
  
   position: relative;
-  width: 80%;
-  height: auto;
+  width: auto;
+  height: 40rem;
 }
 .projects .box-container .box .content {
   position: relative;
@@ -917,12 +946,20 @@ color: purple;
   
 }
 .projects .box-container .box .content h3 {
-  font-size: 2rem;
-  color: #012970;
+  font-size: 1.5rem;
+  color: black;
   padding: 0.5rem 0;
   font-weight: 600;
   text-align: left;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+}
+.projects .box-container .box .content h3 span{
+  font-size: 1.8rem;
+  color: black;
+  text-align: left;
+  margin-top: 1px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
 }
 
 .projects .box-container .box .content h4 {
@@ -931,11 +968,11 @@ color: purple;
   text-align: left;
   margin-top: 1px;
   font-family: "Nunito", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   margin-left: 2rem;
 }
 .projects .box-container .box .content h4 span{
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: rgb(34, 109, 0);
   text-align: left;
   margin-top: 1px;
@@ -954,14 +991,15 @@ color: purple;
 @media screen and (max-width: 600px) {
   .projects .box-container .box {
     flex-direction: column;
-    width: 100%;
+    width: auto;
+height: auto;
   }
   .projects .box-container .box .image {
-    width: 100%;
-    height: 25rem;
+    width: auto;
+    height: auto;
   }
   .projects .box-container .box img {
-    width: 100%;
+    width: auto;
   }
   .projects .box-container .box .content {
     position: relative;
@@ -1174,12 +1212,13 @@ color: purple;
 .Achievements .box-container .box {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   border-radius: 0.5rem;
   box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
   text-align: left;
   position: relative;
   margin-top: 2rem;
+align-items: center;
   
   background: rgb(252, 252, 252);
 
@@ -1197,14 +1236,13 @@ color: purple;
 .Achievements .box-container .box .content h4 {
   font-size: 2rem;
   color: green;
-  padding: 0.5rem 0;
-  font-weight: 700;
+  font-weight: 600;
   text-align: left;
   margin-left: 1rem;
   
 }
 .Achievements .box-container .box .content h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #012970;
   padding: 0.5rem 0;
   font-weight: 600;
@@ -1225,30 +1263,23 @@ color: purple;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
 }
-.Achievements .box-container .box .image {
-  flex: 1 1 50rem;
-  width: 100%;
-}
-.Achievements .box-container .box img {
-  object-fit: cover;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
+
 
 /* Achievements media queries starts*/
-@media screen and (max-width: 600px) {
+@media screen  {
   .Achievements .box-container .box {
     flex-direction: column;
-    width: 100%;
+    width: auto;
   }
   .Achievements .box-container .box .image {
-    width: 100%;
-    height: 100%;
-position: relative;
+    width: auto;
+    height: 80%;
+
   }
   .Achievements .box-container .box img {
-    width: 100%;
+    width: 80%;
+    align-items: center;
+    margin-left: 2rem;
   }
   .Achievements .box-container .box .content {
     position: relative;
@@ -1256,6 +1287,7 @@ position: relative;
     flex-direction: column;
     padding: 1rem;
     flex-wrap: wrap;
+   align-items: left;
     flex: 0;
   }
   .Achievements .btns {
