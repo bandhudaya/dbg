@@ -929,7 +929,7 @@ color: purple;
 
 .projects .box-container .box .image {
   flex: 1 1 1rem;
-  width: auto;
+  width: 100%;
   
 }
 .projects .box-container .box img {
@@ -992,15 +992,15 @@ color: purple;
 @media screen and (max-width: 600px) {
   .projects .box-container .box {
     flex-direction: column;
-    width: auto;
+    width: 100%;
 
   }
   .projects .box-container .box .image {
-    width: auto;
+    width: 100%;
     height: auto;
   }
   .projects .box-container .box img {
-    width: auto;
+    width: 100%;
   }
   .projects .box-container .box .content {
     position: relative;
