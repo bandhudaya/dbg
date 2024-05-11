@@ -1198,7 +1198,6 @@ height: auto;
 .Achievements .box-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: left;
   flex-direction: column;
 }
@@ -1211,7 +1210,6 @@ height: auto;
   text-align: left;
   position: relative;
   margin-top: 2rem;
-align-items: left;
   
   background: rgb(252, 252, 252);
 
@@ -1244,7 +1242,6 @@ align-items: left;
 }
 .Achievements .box-container .box .content p {
   font-size: 1.5rem;
-  margin-left: 0.rem;
   text-align: left;
    margin-left: 1rem;
 }
@@ -1271,7 +1268,7 @@ align-items: left;
   }
   .Achievements .box-container .box img {
     width: 80%;
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
   .Achievements .box-container .box .content {
     position: relative;
