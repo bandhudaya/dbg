@@ -1195,18 +1195,11 @@ height: auto;
   background: #e5ecfb;
   min-height: 10vh;
 }
-.Achievements .qoute {
-  font-size: 1.5rem;
-  text-align: center;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  margin-top: 0.5rem;
-}
 .Achievements .box-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
 }
 .Achievements .box-container .box {
@@ -1218,7 +1211,7 @@ height: auto;
   text-align: left;
   position: relative;
   margin-top: 2rem;
-align-items: center;
+align-items: left;
   
   background: rgb(252, 252, 252);
 
@@ -1278,7 +1271,6 @@ align-items: center;
   }
   .Achievements .box-container .box img {
     width: 80%;
-    align-items: center;
     margin-left: 2rem;
   }
   .Achievements .box-container .box .content {
